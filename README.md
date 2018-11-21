@@ -1,6 +1,12 @@
 # c-cpp
 # Boost
-* 智能指针：intrusive_ptr
+* 智能指针：
+  * intrusive_ptr与share_ptr的区别与相同点：两者都有引用计数。设想下面这个例子。它是有漏洞的。 当sPtrA和sPtrB离开作用域时，都会释放rawPtrA指向的堆空间。每次从裸指针构建一个shared_ptr，在堆空间中，会开辟一点空间，用于记录引用计数。拷贝构造或者赋值构造的shared_ptr会共享这个引用计数。
+  ```c++
+  ClassA rawPtrA = new ClassA();
+  shared_ptr<ClassA>  sPtrA = shared_ptr<ClassA>(rawPtrA);
+  shared_ptr<ClassA>  sPtrB = shared_ptr<<ClassA>(rawPtrA);
+  ```
 
 
 # C++
