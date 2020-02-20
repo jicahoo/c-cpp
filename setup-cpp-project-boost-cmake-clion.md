@@ -46,3 +46,6 @@ int main(int argc, char **argv)
 ```
 * compile: `g++ main.cpp -o main`
 * Problem: how g++  and main exe find the boost?
+    * g++ -v option will output the LIBRARY_PATH, Include path:
+    * header files from /usr/include/boost/.
+    * Lib path: /usr/lib/x86_64-linux-gnu/libboost_* (on ubuntu 64 bit)
