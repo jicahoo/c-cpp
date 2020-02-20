@@ -6,3 +6,43 @@
 ## Install boost
 * `sudo apt install libboost-all-dev`  
 * Consume about 450MB. It also install its depends: g++, libc++....
+
+## use boost
+* Code
+```C++
+#include <stdio.h>
+#include <string>
+
+#include <boost/optional.hpp>
+
+boost::optional<int> func(const std::string &str)
+{
+        boost::optional<int> value;
+        int tmp = 0;
+
+        if (sscanf(str.c_str(), "%d", &tmp) == 1)
+                value.reset(tmp);
+
+        return value;
+}
+
+int main(int argc, char **argv)
+{
+        boost::optional<int> v1 = func("31245");
+        boost::optional<int> v2 = func("hello");
+
+        if (v1)
+                printf("%d\n", v1.get());
+        else
+                printf("v1 not valid\n");
+
+        if (v2)
+                printf("%d\n", v2.get());
+        else
+                printf("v2 not valid\n");
+
+        return 0;
+}
+```
+* compile: `g++ main.cpp -o main`
+* Problem: how g++  and main exe find the boost?
