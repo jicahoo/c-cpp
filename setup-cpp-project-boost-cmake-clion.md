@@ -49,3 +49,6 @@ int main(int argc, char **argv)
     * g++ -v option will output the LIBRARY_PATH, Include path:
     * header files from /usr/include/boost/.
     * Lib path: /usr/lib/x86_64-linux-gnu/libboost_* (on ubuntu 64 bit)
+
+## Install CMake on ubuntu
+* Follow the steps (using comand) at https://vitux.com/how-to-install-cmake-on-ubuntu-18-04/
