@@ -57,3 +57,4 @@ int main(int argc, char **argv)
 * https://riptutorial.com/cmake/example/7501/simple--hello-world--project
 * https://coderefinery.github.io/cmake/03-hello-world-cmake/
 * https://arne-mertz.de/2018/05/hello-cmake/
+* CMake script introduction: https://preshing.com/20170522/learn-cmakes-scripting-language-in-15-minutes/
