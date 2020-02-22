@@ -52,3 +52,8 @@ int main(int argc, char **argv)
 
 ## Install CMake on ubuntu
 * Follow the steps (using comand) at https://vitux.com/how-to-install-cmake-on-ubuntu-18-04/
+### CMake Hello World:
+* http://derekmolloy.ie/hello-world-introductions-to-cmake/
+* https://riptutorial.com/cmake/example/7501/simple--hello-world--project
+* https://coderefinery.github.io/cmake/03-hello-world-cmake/
+* https://arne-mertz.de/2018/05/hello-cmake/
