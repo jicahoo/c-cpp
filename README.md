@@ -21,3 +21,9 @@
 # C/C++ program memory layout:
 * https://unix.stackexchange.com/questions/200348/memory-layout-of-dynamic-loaded-linked-library
 * https://manybutfinite.com/post/anatomy-of-a-program-in-memory/
+
+
+# Website
+* https://www.fluentcpp.com/
+* https://www.fluentcpp.com/2017/01/05/the-importance-of-knowing-stl-algorithms/
+* https://www.fluentcpp.com/2017/01/09/know-your-algorithms-algos-on-sets/
